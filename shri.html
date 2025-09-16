@@ -3,165 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ShriHari M - Resume</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>ShriHari Resume</title>
   <style>
-    @page { size: A4; margin: 0; }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.5; color: #333; background: #f0f2f5; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
-    .resume-container { width: 21cm; height: 29.7cm; background: white; box-shadow: 0 5px 20px rgba(0,0,0,0.1); overflow: hidden; position: relative; }
-    .header { background: #2c3e50; color: white; padding: 25px 35px; text-align: center; }
-    .header h1 { font-size: 28px; margin-bottom: 12px; font-weight: 600; letter-spacing: 0.5px; }
-    .contact-info { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 15px; margin-top: 8px; }
-    .contact-item { display: flex; align-items: center; gap: 8px; font-size: 14px; }
-    .contact-item a { color: white; text-decoration: none; transition: opacity 0.3s; }
-    .contact-item a:hover { opacity: 0.9; text-decoration: underline; }
-    .divider { color: rgba(255,255,255,0.5); }
-    .content { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 25px; padding: 30px 35px; height: calc(100% - 120px); }
-    .main-content { grid-column: 1 / 2; }
-    .sidebar { grid-column: 2 / 3; border-left: 1px solid #eaecee; padding-left: 25px; }
-    .section { margin-bottom: 22px; }
-    .section-title { color: #2c3e50; border-bottom: 2px solid #4a6580; padding-bottom: 6px; margin-bottom: 12px; font-size: 18px; font-weight: 600; }
-    ul { list-style-type: none; padding-left: 5px; }
-    li { margin-bottom: 8px; padding-left: 18px; position: relative; font-size: 14px; }
-    li:before { content: "•"; color: #4a6580; font-weight: bold; position: absolute; left: 0; }
-    .skills-list { margin-top: 5px; }
-    .skills-list span { display: inline-block; margin-right: 6px; margin-bottom: 8px; color: #2c3e50; font-size: 14px; }
-    .skills-list span:after { content: "•"; margin-left: 8px; color: #aaa; }
-    .skills-list span:last-child:after { content: ""; margin-left: 0; }
-    .project { margin-bottom: 18px; padding-bottom: 15px; border-bottom: 1px solid #eaecee; }
-    .project:last-child { border-bottom: none; }
-    .project-title { font-weight: 600; color: #2c3e50; margin-bottom: 5px; font-size: 15px; }
-    .project p { font-size: 14px; }
-    .education-item { margin-bottom: 15px; }
-    .institute { font-weight: 600; color: #2c3e50; font-size: 15px; }
-    .degree { color: #555; font-size: 14px; }
-    .period { color: #777; font-size: 13px; margin-top: 3px; }
-    p { font-size: 14px; text-align: justify; }
-    h3 { font-size: 15px; color: #2c3e50; margin-bottom: 8px; margin-top: 15px; }
-    @media print {
-      body { background: white; padding: 0; }
-      .resume-container { box-shadow: none; width: 100%; height: 100%; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      line-height: 1.6;
+      color: #333;
     }
-    @media (max-width: 768px) {
-      body { padding: 10px; }
-      .resume-container { width: 100%; height: auto; }
-      .content { grid-template-columns: 1fr; padding: 20px; }
-      .sidebar { grid-column: 1 / 2; border-left: none; border-top: 1px solid #eaecee; padding-left: 0; padding-top: 20px; }
-      .contact-info { flex-direction: column; gap: 8px; }
-      .header h1 { font-size: 24px; }
-      .divider { display: none; }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    .contact {
+      margin-bottom: 20px;
+    }
+    .contact a {
+      color: #1565c0;
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      margin-bottom: 25px;
     }
   </style>
 </head>
 <body>
-  <div class="resume-container">
-    <div class="header">
-      <h1>SHRIHARI M</h1>
-      <div class="contact-info">
-        <div class="contact-item"><i class="fas fa-phone"></i><span>+91 8098113555</span></div>
-        <span class="divider">|</span>
-        <div class="contact-item"><i class="fas fa-envelope"></i><a href="mailto:shrih48821@gmail.com">shrih48821@gmail.com</a></div>
-        <span class="divider">|</span>
-        <div class="contact-item"><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/shri-hari-5a2510285" target="_blank">LinkedIn</a></div>
-      </div>
-    </div>
-    
-    <div class="content">
-      <div class="main-content">
-        <div class="section">
-          <h2 class="section-title">Career Objective</h2>
-          <p>Eager to gain hands-on experience and develop my skills further while adding value to a forward-thinking organization. Committed to continuous growth and making a positive impact through dedication and creativity.</p>
-        </div>
-        
-        <div class="section">
-          <h2 class="section-title">Projects</h2>
-          <div class="project">
-            <div class="project-title">AI Voice Assistance</div>
-            <p>Developed an AI-based voice assistant using Python. The system can recognize speech, process it using an AI language model, and respond back with voice output [LiveKit as Reference].</p>
-          </div>
-          <div class="project">
-            <div class="project-title">LanguageSwitcherAgent</div>
-            <p>A voice-enabled assistant that can switch between multiple languages [LiveKit as Reference].</p>
-          </div>
-        </div>
-        
-        <div class="section">
-          <h2 class="section-title">Education</h2>
-          <div class="education-item">
-            <div class="institute">Kg College of Arts and Science</div>
-            <div class="degree">B.Sc. Computer Technology</div>
-            <div class="period">2023 - 2026</div>
-          </div>
-          <div class="education-item">
-            <div class="institute">Sri Ramakrishna Mission Vidyalaya Swami Shivananda</div>
-            <div class="degree">Higher Secondary</div>
-            <div class="period">2021 - 2023</div>
-          </div>
-          <div class="education-item">
-            <div class="institute">Bishop Francis Matriculation School</div>
-            <div class="degree">Secondary</div>
-            <div class="period">2009 - 2021</div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="sidebar">
-        <div class="section">
-          <h2 class="section-title">Skills</h2>
-          <h3>Technical Skills</h3>
-          <div class="skills-list">
-            <span>C</span><span>C++</span><span>HTML</span><span>Python</span>
-          </div>
-          
-          <h3>Tools</h3>
-          <div class="skills-list">
-            <span>Adobe Photoshop</span><span>Figma</span><span>Canva</span><span>Visual Studio</span><span>MS Office</span>
-          </div>
-          
-          <h3>Soft Skills</h3>
-          <div class="skills-list">
-            <span>Adaptability</span><span>Time Management</span><span>Design Thinking</span><span>Presentation</span><span>Public Speaking</span>
-          </div>
-        </div>
-        
-        <div class="section">
-          <h2 class="section-title">Certifications</h2>
-          <ul>
-            <li>Google UI/UX Design</li>
-            <li>Programming Fundamentals</li>
-            <li>Digital Transformation with Google Cloud</li>
-          </ul>
-        </div>
-        
-        <div class="section">
-          <h2 class="section-title">Languages</h2>
-          <ul>
-            <li>Tamil <span style="color: #666;">(Native)</span></li>
-            <li>English <span style="color: #666;">(Read, Write, Speak)</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+  <h1>SHRIHARI M</h1>
+  <div class="contact">
+    <p>📞 +91 8098113555</p>
+    <p>📧 <a href="mailto:shrih48821@gmail.com">shrih48821@gmail.com</a></p>
+    <p>🔗 <a href="https://www.linkedin.com/in/shri-hari-5a2510285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">LinkedIn</a></p>
   </div>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const printBtn = document.createElement('button');
-      printBtn.textContent = 'Print Resume';
-      printBtn.style.position = 'fixed';
-      printBtn.style.bottom = '20px';
-      printBtn.style.right = '20px';
-      printBtn.style.padding = '10px 15px';
-      printBtn.style.background = '#2c3e50';
-      printBtn.style.color = 'white';
-      printBtn.style.border = 'none';
-      printBtn.style.borderRadius = '4px';
-      printBtn.style.cursor = 'pointer';
-      printBtn.style.zIndex = '1000';
-      printBtn.onclick = function() { window.print(); };
-      document.body.appendChild(printBtn);
-    });
-  </script>
+  <div class="section">
+    <h2>Career Objective</h2>
+    <p>
+      Eager to gain hands-on experience and develop my skills further while adding value to a 
+      forward-thinking organization. Committed to continuous growth and making a positive impact 
+      through dedication and creativity.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Certificate in "Google UI\UX Design "</li>
+      <li>Certificate in "Programming Fundamentals"</li>
+      <li>Certification of "Digital Transformation with Google Cloud"</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Education</h2>
+    <ul>
+    <li>Kg College of Arts and Science - B.Sc. Computer Technology (2023 - 2026)</li>
+    <li>Sri Ramakrishna Mission Vidyalaya Swami Shivananda - Higher Secondary (2021-2023) </li>
+    <li>Bishop Francis Matriculation School - Secondary(2009-2021) </li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Skills</h2>
+    <ul>
+      <li>Technical Skills : C, C++, HTML, Python</li>
+      <li>Tools : Adobe Photoshop,Figma, Canva, Visual Studio, MS Office (Word, Excel, PowerPoint) </li>
+      <li>Soft Skills : Adaptability, Time Management, Design Thinking, Good presentation and public speaking</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Projects</h2>
+    <ul>
+      <li>AI Voice Assistance - Developed an AI-based voice assistant using Python. The system can recognize speech, process it using an AI language model, and respond back with voice output[LiveKit as Reference]</li>
+      <li>LanguageSwitcherAgent - A voice-enabled assistant that can switch between multiple languages[LiveKit as Reference]</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Languages</h2>
+    <ul>
+      <li>Tamil [Native] </li>
+      <li>English [Read, Write , Speak]</li>
+    </ul>
+  </div>
 </body>
 </html>
